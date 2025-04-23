@@ -1,7 +1,7 @@
 import threading
 import numpy as np
 import genesis as gs
-
+from _tkinter import TK 
 
 def run_sim(scene):
     for _ in range(200):
@@ -35,7 +35,7 @@ def main():
             dt=0.01,
             gravity=(0.0, 0.0, -10.0),
         ),
-        renderer = gs.renderers.Rasterizer(), # using rasterizer for camera rendering
+        renderer = gs.renderers.RayTracer(), # using rasterizer for camera rendering
     )
     
 
@@ -48,7 +48,7 @@ def main():
     ########################## build ##########################
     scene.build()
 
-    threading.Thread(target=run_sim, args=(scene,)).start()
+    threading.Thread(target=run_sim, args=(scene)).start()
     scene.viewer.run()
 
 
