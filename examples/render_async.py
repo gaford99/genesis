@@ -1,7 +1,8 @@
 import threading
+
 import numpy as np
+
 import genesis as gs
-from _tkinter import TK 
 
 def run_sim(scene):
     for _ in range(200):

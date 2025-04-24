@@ -1,0 +1,2 @@
+/Users/geoffreyford/Projects/genesis/build/CMakeFiles/edit_cache.dir
+/Users/geoffreyford/Projects/genesis/build/CMakeFiles/rebuild_cache.dir
